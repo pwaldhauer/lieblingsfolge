@@ -1,0 +1,7 @@
+	<ol>
+
+<% @folgen.each do |folge| %>
+	<%= erb :folge, :locals => { :folge => folge } %>
+<% end %>
+
+	</ol>
