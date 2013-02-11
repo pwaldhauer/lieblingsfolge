@@ -1,14 +1,14 @@
 require 'rubygems'
 require 'data_mapper'
 
-DataMapper.setup(:default, ENV['DATABASE_URL'] || "sqlite3://#{Dir.pwd}/dev.db")
+DataMapper.setup(:default, ENV['DATABASE_URL'] || "postgres://lieblingsfolge:test@localhost/lieblingsfolge")
 
 class Folge
 	include DataMapper::Resource
 
 	property :id, Serial
 	property :nummer, Integer
-	property :title, String
+	property :title, String, :length => 250
 	property :link, String
 
 	has n, :votes

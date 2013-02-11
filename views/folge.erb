@@ -5,12 +5,11 @@
 		</div>
 
 		<div class="info">
-			<h3>Folge <%=folge.nummer%></h3>
-			<h2><%=folge.title%></h3>
+			<h2><a href="<%=folge.link%>"><%=folge.title%></a></h3>
 		</div>
 
-	<div class="vote">
-			<a href="/vote?id=<%=folge.id%>">Vote!</a>
-		</div>
+	
+		<a class="vote" href="/vote?id=<%=folge.id%>">Vote!</a>
+
 
 	</li>
