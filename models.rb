@@ -1,7 +1,7 @@
 require 'rubygems'
 require 'data_mapper'
 
-DataMapper.setup(:default, ENV['HEROKU_POSTGRESQL_COPPER_URL'] || "postgres://lieblingsfolge:test@localhost/lieblingsfolge")
+DataMapper.setup(:default, ENV['HEROKU_POSTGRESQL_TEAL_URL'] || "postgres://lieblingsfolge:test@localhost/lieblingsfolge")
 
 class Folge
 	include DataMapper::Resource
