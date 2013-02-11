@@ -25,10 +25,14 @@ get '/' do
     @logged_in = false
   end
 
-  @folgen = Folge.all();
+  @folgen = Folge.all(:order => :nummer.desc);
 
   @folgen.sort! do |a, b|
+    if b.votes.count == a.votes.count then
+      b.nummer <=> a.nummer
+    else
       b.votes.count <=> a.votes.count
+    end
   end
 
     erb :index
