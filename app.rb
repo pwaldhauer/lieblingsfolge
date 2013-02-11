@@ -11,8 +11,8 @@ require './models.rb'
 
 set :twitter_oauth_config,  :key => 'KEY',
                             :secret   => 'SECRET',
-                            #:callback => 'http://lieblingsfolge.herokuapp.com/auth',
-                            :callback => 'http://bloody.debian:9393/auth',
+                            :callback => 'http://lieblingsfolge.herokuapp.com/auth',
+                            #:callback => 'http://bloody.debian:9393/auth',
                             :login_template => {:erb => :login}
 
 enable :sessions
