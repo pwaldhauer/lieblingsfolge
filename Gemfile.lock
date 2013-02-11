@@ -57,6 +57,7 @@ GEM
     mime-types (1.18)
     multi_json (1.5.0)
     oauth (0.4.7)
+    pg (0.14.1)
     rack (1.4.1)
     rack-protection (1.3.2)
       rack
@@ -79,6 +80,7 @@ PLATFORMS
 DEPENDENCIES
   data_mapper
   dm-postgres-adapter
+  pg
   sinatra
   sinatra-twitter-oauth
   twitter_oauth
