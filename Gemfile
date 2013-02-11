@@ -6,3 +6,4 @@ gem "twitter_oauth"
 
 gem "data_mapper"
 gem "dm-postgres-adapter"
+gem "pg"
