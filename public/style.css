@@ -21,6 +21,24 @@ body {
 	margin: auto;
 }
 
+.login {
+	margin-top: 50px;
+
+	color: #fff;
+
+	text-align: center;
+}
+
+
+.login a {
+	color: inherit;
+}
+
+.login a:hover {
+	text-decoration: none;
+}
+
+
 ol {
 	list-style-type: none;
 
@@ -116,10 +134,12 @@ header h1 {
 footer {
 	font-size: 14px;
 	text-align: center;
+
+	margin-bottom: 25px;
 }
 
 footer a {
-	color: inherit;
+	color: #fff;
 	text-decoration: none;
 }
 

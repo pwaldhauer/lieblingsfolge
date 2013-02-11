@@ -1,15 +1,15 @@
 <li class="clearfix">
 
-		<div class="place">
+		<div class="place" title="Votes">
 			<%=folge.votes.count%>
 		</div>
 
 		<div class="info">
-			<h2><a href="<%=folge.link%>"><%=folge.title%></a></h3>
+			<h2><a href="<%=folge.link%>">#<%=folge.nummer%>: <%=folge.title%></a></h3>
 		</div>
 
-	
+		<% if @logged_in then %>
 		<a class="vote" href="/vote?id=<%=folge.id%>">Vote!</a>
+		<% end %>
 
-
-	</li>
+</li>

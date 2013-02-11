@@ -1,3 +1,7 @@
+    <% if !@logged_in then %>
+    <p class="login"><a href="/connect">Logg dich mit Twitter ein um abzustimmen</a></p>
+    <% end %>
+
 	<ol>
 
 <% @folgen.each do |folge| %>
