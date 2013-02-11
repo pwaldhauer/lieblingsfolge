@@ -4,7 +4,7 @@ require 'sinatra'
 
 require 'sinatra-twitter-oauth'
 
-require 'models.rb'
+require './models.rb'
 
 set :twitter_oauth_config,  :key => 'KEY',
                             :secret   => 'SECRET',
