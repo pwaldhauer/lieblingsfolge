@@ -14,14 +14,11 @@ enable :sessions
 
 get '/' do
 
-  #  @folge1 = Folge.new(
-  #      :nummer =>  1,
-  #      :title => 'asdas adsd asdasd',
-  #      :link => 'asdasda'
-  #  );
-  #  @folge1.save
-  
   @folgen = Folge.all();
+
+  @folgen.sort! do |a, b|
+      b.votes.count <=> a.votes.count
+  end
 
     erb :index
 
