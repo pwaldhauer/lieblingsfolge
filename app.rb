@@ -56,7 +56,7 @@ get '/update' do
 
   @regexp = /28_(\d+): (.*)/
 
-  url = 'http://konferenz28.de/rss'
+  url = 'http://konferenz28.de/tagged/podcast/rss'
   open(url) do |rss|
     feed = RSS::Parser.parse(rss)
     feed.items.each do |item|
