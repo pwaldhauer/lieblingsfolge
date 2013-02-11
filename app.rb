@@ -9,10 +9,9 @@ require 'open-uri'
 
 require './models.rb'
 
-set :twitter_oauth_config,  :key => 'KEY',
-                            :secret   => 'SECRET',
-                            :callback => 'http://lieblingsfolge.herokuapp.com/auth',
-                            #:callback => 'http://bloody.debian:9393/auth',
+set :twitter_oauth_config,  :key => ENV['TWITTER_KEY'],
+                            :secret   => ENV['TWITTER_SECRET'],
+                            :callback => ENV['TWITTER_CALLBACK'],
                             :login_template => {:erb => :login}
 
 enable :sessions
